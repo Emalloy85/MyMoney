@@ -3,50 +3,115 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://fonts.googleapis.com/css?family=Rye' rel='stylesheet'>
   <title>MyMoney</title>
 </head>
 <body>
 
+<style>
+body {
+    background-color: rgb(166,204,112);
+    font-family: 'Rye';
+  }
+p, h6 {
+  color: cornsilk;
+  font-size: 12px; 
+}
+h1.center{
+  color: cornsilk;
+  background-color: rgb(166,204,112) ;
+  font-size: 72px;
+  text-align: center;
+}
+h2 {
+  color: cornsilk;
+  font-size: 36px;
+}
+h3 {
+  color: cornsilk;
+  font-size: 36px;
+}
+#accountInfo {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: cornsilk;
+  font-size: 24px;
+}
+#bankInfo {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center ;
+  color: cornsilk;
+  font-size: 24px;
+}
+#accounts, #bank {
+  text-align: center;
+}
+</style>
+
 <!--Welcome paragraph-->
 <sec>
-<h1>Welcome to MyMoney!</h1>
+<h1 class="center">Welcome to MyMoney!</h1>
+<br>
 </sec>
 
 <!--User information--> 
 <sec>
-<h2>User Profile</h2>
 <h2>Todd Hope</h2>
 
-<!--User accounts list-->
-<h3>Users Accounts</h3> <ul>
-  <li>Checking</li> 
-  <li>Savings</li> 
-  <li>Investment</li> </ul>
-
-  <!--User bank list-->
-<h3>Users Banks</h3> <ol>
-  <li>Chase</li>
-  <li>Wells Fargo</li>
-  <li>Bank of America</li> </ol>
+<!--User Image-->  
+<img src="https://dummyimage.com/300x400/000/fff" alt="profile picture">
 </sec>  
+<br>
 
-<!--Account type list-->
-<sec>
-<h3>Accounts</h3> <dl>
-<dt>Checking</dt>
-<dd>Account for purchases</dd>
-<dt>Savings</dt>
-<dd>Account for saving money</dd>
-<dt>Investment</dt>
-<dd>Account for stocks</dd> </dl>
-</sec>
+  <sec>
+<!--User Bank Account Table-->  
+<h3 id="accounts">Users Accounts</h3> 
+<table id="accountInfo" border="1" cellpadding="10">
+  <tr>
+    <th>Accounts</th>
+    <th>Balance</th>
+  </tr>
 
-<!--Links and images for banks-->
+  <tr>
+    <td>Checking</td>
+    <td>$1500</td>
+  </tr>
+
+  <tr>
+    <td>Savings</td>
+    <td>$3000</td>
+  </tr>
+
+  <tr>
+    <td>Total</td>
+    <td>$4500</td>
+  </tr>
+  <br>
+</table>
+</sec>    
+
 <sec>
-<p>Open a free checking account with <a href="https://www.chase.com/">Chase<img src="/Chase.png" alt=" Chase Logo"></a></p>
-<p>Open a high yield savings account with <a href="https://www.discover.com/">Discover<img src="/Discover.png" alt="Discover Logo"></a></p>
-<p>Open an investment account with <a href="https://www.fidelity.com/">Fidelity<img src="/Fidelity.png" alt="Fidelity Logo"></a></p>
-</sec>
+<!--User Bank Table-->  
+<h3 id="bank">Users Banks</h3>
+<table id="bankInfo" border="1" cellpadding="10">
+  <tr>
+    <th>Accounts</th>
+    <th>Bank</th>
+  </tr>
+
+  <tr>
+    <td>Checking</td>
+    <td>Chase</td>
+  </tr>
+
+  <tr>
+    <td>Savings</td>
+    <td>Wells Fargo</td>
+  </tr>
+</table>
+</sec>  
 
 <!--Legal Notice-->
 <sec>
