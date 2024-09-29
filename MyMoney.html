@@ -3,52 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="MyMoney.css">
   <link href='https://fonts.googleapis.com/css?family=Rye' rel='stylesheet'>
   <title>MyMoney</title>
 </head>
 <body>
 
-<style>
-body {
-    background-color: rgb(166,204,112);
-    font-family: 'Rye';
-  }
-p, h6 {
-  color: cornsilk;
-  font-size: 12px; 
-}
-h1.center{
-  color: cornsilk;
-  background-color: rgb(166,204,112) ;
-  font-size: 72px;
-  text-align: center;
-}
-h2 {
-  color: cornsilk;
-  font-size: 36px;
-}
-h3 {
-  color: cornsilk;
-  font-size: 36px;
-}
-#accountInfo {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  color: cornsilk;
-  font-size: 24px;
-}
-#bankInfo {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center ;
-  color: cornsilk;
-  font-size: 24px;
-}
-#accounts, #bank {
-  text-align: center;
-}
-</style>
+
 
 <!--Welcome paragraph-->
 <sec>
@@ -60,13 +21,19 @@ h3 {
 <sec>
 <h2>Todd Hope</h2>
 
-<!--User Image-->  
+<!--User Image-->
 <img src="https://dummyimage.com/300x400/000/fff" alt="profile picture">
-</sec>  
 <br>
 
-  <sec>
-<!--User Bank Account Table-->  
+
+ <!--Age Confirmation--> 
+<label>Enter your age: </label>
+<input type="text" id="textInput"><br><br>
+<button type ="enter" id="enterButton">Enter</button>
+<p id="message"></p>
+
+
+<!--User Bank Account Table--> 
 <h3 id="accounts">Users Accounts</h3> 
 <table id="accountInfo" border="1" cellpadding="10">
   <tr>
@@ -89,11 +56,10 @@ h3 {
     <td>$4500</td>
   </tr>
   <br>
-</table>
-</sec>    
 
-<sec>
-<!--User Bank Table-->  
+</table>
+
+<!--User Bank Table-->
 <h3 id="bank">Users Banks</h3>
 <table id="bankInfo" border="1" cellpadding="10">
   <tr>
@@ -110,13 +76,15 @@ h3 {
     <td>Savings</td>
     <td>Wells Fargo</td>
   </tr>
+
 </table>
-</sec>  
 
 <!--Legal Notice-->
 <sec>
 <p><h6>MyMoney is a registered LLC</h6></p>
 <p><h6>MyMoney is not responsible for market outcomes</h6></p>
+
+<script src="MyMoney.js"></script>
 </sec>
 
 </body>
