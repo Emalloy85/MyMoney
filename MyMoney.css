@@ -1,0 +1,51 @@
+body {
+  background-color: rgb(166,204,112);
+  font-family: 'Rye';
+}
+p, h6 {
+color: cornsilk;
+font-size: 12px; 
+}
+h1.center{
+color: cornsilk;
+background-color: rgb(166,204,112) ;
+font-size: 72px;
+text-align: center;
+}
+h2 {
+color: cornsilk;
+font-size: 36px;
+}
+h3 {
+color: cornsilk;
+font-size: 36px;
+}
+#accountInfo {
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+color: cornsilk;
+font-size: 24px;
+}
+#bankInfo {
+margin-left: auto;
+margin-right: auto;
+text-align: center ;
+color: cornsilk;
+font-size: 24px;
+}
+#accounts, #bank {
+text-align: center;
+}
+#message {
+  color: cornsilk;
+  font-size: 36px;
+}
+#textInput {
+  color: black;
+  font-size: 24px;
+}
+label {
+  color: cornsilk;
+  font-size: 24px;
+}
